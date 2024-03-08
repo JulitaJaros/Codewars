@@ -13,5 +13,22 @@ public class CountTheDivisorsOfANumber {
     Note you should only return a number, the count of divisors.
     The numbers between parentheses are shown only for you to see which numbers are counted in each case.*/
 
+if (n <= 0) {
+        return 0; // Invalid input
+    }
 
+    let count = 0;
+  for (let i = 1; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            if (n / i === i) {
+                // If the divisors are the same (perfect square), count only once
+                count++;
+            } else {
+                // Otherwise, count both divisors
+                count += 2;
+            }
+        }
+    }
+
+  return count;
 }
