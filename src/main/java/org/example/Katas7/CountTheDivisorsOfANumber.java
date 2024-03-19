@@ -1,7 +1,9 @@
+/*
 package org.example.Katas7;
 
 public class CountTheDivisorsOfANumber {
-  /*  Count the number of divisors of a positive integer n.
+  */
+/*  Count the number of divisors of a positive integer n.
 
     Random tests go up to n = 500000.
 
@@ -11,7 +13,8 @@ public class CountTheDivisorsOfANumber {
         12 --> 6 // we have 6 divisors - 1, 2, 3, 4, 6 and 12
         30 --> 8 // we have 8 divisors - 1, 2, 3, 5, 6, 10, 15 and 30
     Note you should only return a number, the count of divisors.
-    The numbers between parentheses are shown only for you to see which numbers are counted in each case.*/
+    The numbers between parentheses are shown only for you to see which numbers are counted in each case.*//*
+
 
 if (n <= 0) {
         return 0; // Invalid input
@@ -32,3 +35,4 @@ if (n <= 0) {
 
   return count;
 }
+*/
